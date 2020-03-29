@@ -272,3 +272,4 @@ iredis VS redis-cli
 Happy Hacking!
 
 slide: <https://github.com/laixintao/myslides>
+slide播放工具: [patat](https://github.com/jaspervdj/patat)
