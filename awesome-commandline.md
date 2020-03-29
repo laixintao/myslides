@@ -144,6 +144,65 @@ iredis VS redis-cli
 
 ---
 
+# 我们需要库/框架！
+
+首先，区分一下不同的框架，都是在做什么的：
+
+- click: 命令行工具 (argparse等等其他的库也是)
+- 全屏TUI工具: curses urwid <https://www.kawabangga.com/posts/2761>  (pingtop)
+- REPL prompt-toolkit!
+
+---
+
+# prompt-tookit
+
+- Pure Python
+- Completely type annotated
+- Key bindings
+- No global state
+- Auto suggestions
+- etc.
+
+---
+
+# 我们用它来写一个吧！
+
+---
+
+# 增加细节：IRedis 简化版
+
+---
+
+# What's more
+
+- 去 example 发现更多Feature/可以使用的功能;
+- 查看 prompt 接口的参数;
+- 浏览 mycli/pgcli/iredis 的代码；
+
+
+---
+
+# 核心要点：FormattedText
+
+```python
+  FormattedText(
+      [
+          ("class:dockey", "value: "),
+          ("class:value", "hello world"),
+      ]
+  )
+```
+
+---
+
+# 核心要点: Lexer & Completer
+
+编译正则的难题?
+
+<https://www.kawabangga.com/posts/3877>
+
+---
+
 # 开发技巧
 
 - 日志输出;
@@ -190,9 +249,26 @@ iredis VS redis-cli
 
 ---
 
-**我们来发布一个版本吧！**
+# dbcli 的开发理念
+
+<https://www.dbcli.com/about/>
+
+* Be nice.
+* Be courteous.
+* Be respectful.
+* Have an open mind.
+* Never be condescending.
+* Never discriminate (even if you like Emacs and Java).
+
+---
+
+# What's next?
+
+* mongo cli? ES cli?
+* 参与到 dbcli 的开发?
 
 ---
 
 Happy Hacking!
 
+slide: <https://github.com/laixintao/myslides>
